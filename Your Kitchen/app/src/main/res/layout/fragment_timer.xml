@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="300dp"
+    tools:context=".TimerFragment"
+    android:elevation="20dp"
+    android:background="@drawable/rounded_border_timer_back">
+
+        <ListView
+            android:id="@+id/timerList"
+            android:layout_width="350dp"
+            android:layout_height="295dp"
+            android:background="#cccc"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@color/colorBlack"
+            android:dividerHeight="2dp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

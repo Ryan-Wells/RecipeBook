@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:id="@+id/homeLayout"
+    tools:context="com.wwu.myapplication.homePage">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForHomeMisc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonToManageTimers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/manage_timers" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+
+            android:text="@string/app_name"
+            android:textColor="#FCF7FF"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/buttonToPublicPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button"
+
+            android:text="@string/browse_public_recipes" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForHomeTagsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp">
+
+        <ListView
+            android:id="@+id/tagsList"
+            android:layout_width="150dp"
+            android:layout_height="262dp"
+            android:divider="@color/colorBlack"
+            android:background="@drawable/rounded_border"
+            android:dividerHeight="2dp" />
+
+        <Button
+            android:id="@+id/buttonToEditTags"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:visibility="invisible"
+            android:text="@string/checkMark" />
+
+        <EditText
+            android:id="@+id/editTextForTags"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTagsHint"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForHomeRecipeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:paddingTop="2dp">
+
+        <ListView
+            android:id="@+id/myRecipeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_border_top"
+            android:divider="@color/colorBlack"
+            android:dividerHeight="2dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+    <!-- android:background="#759eb8" -->

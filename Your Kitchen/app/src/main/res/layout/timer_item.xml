@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/actualTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/timer_name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/timeRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/actualTimer"
+        android:text="@string/time_remaining"
+        />
+
+    <Button
+        android:id="@+id/pauseResumeButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/pause"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/plusOneButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/plus"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"/>
+
+    <Button
+        android:id="@+id/minusOneButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/minus"
+        />
+
+
+
+</RelativeLayout>

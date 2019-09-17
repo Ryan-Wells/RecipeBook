@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/publicLayout"
+    android:background="@drawable/gradient_1"
+    tools:context="com.wwu.myapplication.publicRecipesPage">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForPublicMisc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonToHomePage"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.53"
+            android:background="@drawable/rounded_button"
+            android:layout_marginStart="5dp"
+            android:text="@string/back" />
+        
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:layout_marginStart="35dp"
+            android:text="@string/browsing_public_recipes"
+            android:textColor="#FCF7FF"
+            android:textSize="24sp"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonToManageTimers"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:layout_marginEnd="5dp"
+            android:text="@string/manage_timers" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForPublicTagsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <ListView
+            android:id="@+id/publicTagsList"
+            android:layout_width="150dp"
+            android:layout_height="333dp"
+            android:divider="@color/colorBlack"
+            android:elevation="20dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_border"
+            android:dividerHeight="2dp" />
+
+
+        <Button
+            android:id="@+id/buttonToEditTagsPublic"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:visibility="invisible"
+            android:text="@string/checkMark" />
+
+        <EditText
+            android:id="@+id/editTextForTagsPublic"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTagsHint"
+            android:visibility="invisible"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutForPublicRecipeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="300dp"
+        android:paddingTop="2dp">
+
+        <ListView
+            android:id="@+id/publicRecipeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_border_top"
+            android:divider="@color/colorBlack"
+            android:elevation="20dp"
+            android:dividerHeight="2dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
